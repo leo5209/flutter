@@ -10,6 +10,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // return Scaffold(
+    //   appBar: AppBar(
+    //     title: const Text("my information"),
+    //   ),
+    //   body:const Center(child: Text("刘强 12021215115")));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -22,9 +27,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'my information'),
     );
   }
 }
@@ -76,9 +81,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
+          // Center is a layout widget. It takes a single child and positions it
+          // in the middle of the parent.
+          child: Text("------魔改版本--------")
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -93,18 +98,18 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: <Widget>[
+          //       const Text(
+          //         'You have pushed the button this many times:',
+          //       ),
+          //       Text(
+          //         '$_counter',
+          //         style: Theme.of(context).textTheme.headline4,
+          //       ),
+          //     ],
+          //   ),
+          ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
@@ -113,3 +118,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
